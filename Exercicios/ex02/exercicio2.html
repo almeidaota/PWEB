@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pagina utilizando forms</title>
+    <link rel="stylesheet" href="exercicio2.html">
+</head>
+<body>
+    <main>
+        <div id="formulario">
+            <form action = "">
+                <section>
+                    <fieldset>
+                        <legend>informações pessoais do aluno</legend>
+                        <label for="nome">Nome</label>
+                        <input type="text" id="nome" name="nome" required size="50" maxlenght="50" pattern="[a-zA-Z]{1,50}" autofocus />
+                        <br>
+                        <br>
+                        <label for="email">email</label>
+                        <input type="email" id="email" name="email">
+                        <br>
+                        <br>
+                        <label>SEXO</label>
+                        <br>
+                        <label>MASCULINO    </label>
+                        <input type="radio" id="masculino" name="sexo" value="M" checked>
+                        <label>FEMININO</label>
+                        <input type="radio" id="feminino" name="sexo" value="F">
+                        <label>OUTRO</label>
+                        <input type="radio" id="outro" name="sexo" value="O">
+                        <br>
+                        <br>
+                        <label>PASSATEMPOS:</label>
+                        <br>
+                        <input type="checkbox" id="passatempo1" name="passatempos" value="ler">
+                        <label>ler</label>
+                        <input type="checkbox" id="passatempo2" name="passatempos" value="esporte">
+                        <label>praticar esportes</label>
+                        <p>
+                            <label>cor favorita</label>
+                            <input type="color" id="cor" name="cor" value="#ff0000">
+                        </p>
+                        <br>
+                        <br>
+                        <input type="submit" value="enviar">
+                        <button type="reset">limpar</button>
+                    </fieldset>
+                    <br>
+                    <br>
+                    <fieldset>
+                        <legend>deixe aqui alguma informação que julgar necessaria</legend>
+                        <label>mensagem</label>
+                        <textarea name="mensagem" id="mensagem" cols="50" rows="5" placeholder="vazio"></textarea>
+                        <br>
+                        <br>
+                        <label>pais</label>
+                        <select name="pais" id="pais">
+                            <option value = "">Selecione</option>
+                            <option value = "brasil">Brasil</option>
+                            <option value="eua">EUA</option>
+                            <option value="portugal">Portugal</option>
+                            <option value="espanha">Espanha</option>
+                        </select>
+                        <br>
+                        <br>
+                        <button type="button">Cancelar</button>
+                    </fieldset>
+                </section>
+            </form>
+        </div>
+    </main>
+    <footer class="rodape">Pagina criada na aula de PWEB - direitos reservados - 2025</footer>
+</body>
+</html>
