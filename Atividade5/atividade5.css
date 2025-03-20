@@ -1,0 +1,67 @@
+.box {
+    width: 500px;
+    height: 500px;
+    background-color: gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-family: Arial, sans-serif;
+    color: white;
+    text-transform: uppercase;
+}
+
+@media (max-width: 420px) {
+    .box {
+        background-color: gray;
+    }
+    #text::after {
+        content: "Cinza";
+    }
+}
+
+@media (min-width: 421px) and (max-width: 768px) {
+    .box {
+        background-color: orange;
+    }
+    #text::after {
+        content: "Laranja";
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .box {
+        background-color: magenta;
+    }
+    #text::after {
+        content: "Rosa";
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1366px) {
+    .box {
+        background-color: blue;
+    }
+    #text::after {
+        content: "Azul";
+    }
+}
+
+@media (min-width: 1367px) and (max-width: 1920px) {
+    .box {
+        background-color: yellow;
+        color: black;
+    }
+    #text::after {
+        content: "Amarelo";
+    }
+}
+
+@media (min-width: 1921px) {
+    .box {
+        background-color: green;
+    }
+    #text::after {
+        content: "Verde";
+    }
+}
