@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesquisa de Opinião</title>
+    <script src="atividade8.js" defer></script>
+</head>
+<body>
+    <h2>Pesquisa de Opinião sobre o Filme</h2>
+    <p>Informe seus dados:</p>
+    <label>Idade: <input type="number" id="idade"></label>
+    <label>Sexo:
+        <select id="sexo">
+            <option value="Feminino">Feminino</option>
+            <option value="Masculino">Masculino</option>
+            <option value="Outros">Outros</option>
+        </select>
+    </label>
+    <label>Opinião:
+        <select id="opiniao">
+            <option value="4">Ótimo</option>
+            <option value="3">Bom</option>
+            <option value="2">Regular</option>
+            <option value="1">Péssimo</option>
+        </select>
+    </label>
+    <button onclick="registrar()">Enviar</button>
+    
+    <h3>Resultados:</h3>
+    <p id="resultados"></p>
+</body>
+</html>
