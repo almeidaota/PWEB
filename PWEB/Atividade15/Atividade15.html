@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>atividade 15</title>
+</head>
+
+<body>
+    <header>
+        <h1>Formulario</h1>
+    </header>
+
+    <form action="action_test" method="POST" name="formulario" id="formulario" onsubmit="return validarDados();">
+
+        <div id="principal" width=200 heigth=200>
+            <p>Nome:</p>
+            <input name="idNome" type="text" id="idNome" size="52" maxlength="150">
+            <br>
+            <p>Email:</p>
+            <input name="idEmail" type="email" id="idEmail" size="52" maxlength="150">
+            <br>
+            <p>Comentário:</p>
+            <textarea name="idComentario" cols="50" rows="8" id="idComentario" value="" input></textarea>
+            <br>
+            <p>Pesquisa: </p>
+            <p>Primeira vez nessa Pagina?</p>
+            <label>
+                <input type="radio" name="escolha" value="Sim" id="idSim">
+                Sim
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="escolha" value="Não" id="idNao">
+                Não
+            </label>
+<br>
+<h2 id="resultado"></h2>
+<br>
+
+            <input name="Submit" id="idEnviar" type="submit" form="formulario" value="Enviar">
+            <input name="Reset" type="reset" form="formulario" value="Limpar">
+        
+
+
+        </div>
+    </form>
+
+    <script src="atividade15.js"></script>
+</body>
+
+</html>
