@@ -27,16 +27,15 @@
 <body>
    <table id="tabela1">
     <tr class="cabeca">
+        <td>Id</td>
         <td>Nome</td>
         <td>Email</td>
     </tr>
-    <% console.log('QUANTIDADE DE REGISTROS ' +  profs.length)%>
-    <% for(let i=0; i<profs.length;i++){%>
         <tr>
-            <td><%=profs[i].nome_professor%></td>
-            <td><%=profs[i].email_professor%></td>
+            <td><%=profs[0].ID_professor %></td>
+            <td><%=profs[0].nome_professor%></td>
+            <td><%=profs[0].email_professor%></td>
         </tr>
-    <%}%>
    </table>
     
 </body>
