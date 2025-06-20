@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Estante de Livros</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="page-header">
+        <h1>Minha Estante</h1>
+    </header>
+
+    <main class="container">
+        <section class="search-container">
+            <form id="searchForm" role="search">
+                <input type="search" id="search" placeholder="Pesquise na sua estante...">
+            </form>
+            <a href="/pages/form.html" class="btn-primary">Cadastrar Novo Livro</a>
+        </section>
+
+        <div id="api-search-results"></div>
+
+        <hr style="margin: 2rem 0; border: none; border-top: 1px solid #DCD6E8;">
+
+        <div class="content-split">
+            <aside class="title-list-container">
+                <h2>Títulos na Estante</h2>
+                <ul id="titleList"></ul>
+            </aside>
+            
+            <section class="book-grid-container">
+                <h2>Sua Coleção</h2>
+                <div id="lista-livros" class="book-grid">
+                    </div>
+            </section>
+        </div>
+    </main>
+
+    <script type="module" src="js/app.js"></script>
+</body>
+</html>

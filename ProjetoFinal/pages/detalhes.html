@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes do Livro</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <header class="page-header">
+        <h1 id="detail-title">Carregando...</h1>
+        <a href="../index.html" class="btn-secondary">Voltar para a Estante</a>
+    </header>
+
+    <main class="container">
+        <div id="details-container" class="detail-view">
+            <div class="detail-cover">
+                <img id="detail-img" src="" alt="Capa do livro">
+            </div>
+            <div class="detail-info">
+                <p><strong>Autor:</strong> <span id="detail-autor"></span></p>
+                <p><strong>Ano de Publicação:</strong> <span id="detail-ano"></span></p>
+                <p><strong>Páginas:</strong> <span id="detail-paginas"></span></p>
+                <p><strong>Nota:</strong> <span id="detail-nota"></span>/10</p>
+                <hr>
+                <p><strong>Sinopse:</strong></p>
+                <p id="detail-sinopse"></p>
+                <div class="form-actions">
+                    <button type="button" id="btn-excluir" class="btn-danger">Excluir Livro</button>
+                    <a id="btn-editar" href="#" class="btn-primary">Editar</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script type="module" src="../js/app.js"></script>
+</body>
+</html>

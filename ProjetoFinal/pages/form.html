@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Livro</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <header class="page-header">
+        <h1 id="form-title">Adicionar Novo Livro</h1>
+        <a href="../index.html" class="btn-secondary">Voltar para a Estante</a>
+    </header>
+
+    <main class="form-container">
+        <form id="livro-form" class="book-form">
+            <div id="api-search-section" class="api-search-box">
+                <h3>Buscar na Web para preencher</h3>
+                <input type="text" id="api-search-input" placeholder="Comece a digitar um título para buscar...">
+                <div id="api-search-results"></div>
+            </div>
+
+            <div class="form-group">
+                <label for="titulo">Título</label>
+                <input type="text" id="titulo" name="titulo" required>
+            </div>
+            <div class="form-group">
+                <label for="autor">Autor</label>
+                <input type="text" id="autor" name="autor">
+            </div>
+            <div class="form-group">
+                <label for="capa">URL da Capa</label>
+                <input type="url" id="capa" name="capa" placeholder="https://exemplo.com/capa.jpg">
+            </div>
+            <div class="form-group-row">
+                <div class="form-group">
+                    <label for="ano">Ano</label>
+                    <input type="text" id="ano" name="ano">
+                </div>
+                <div class="form-group">
+                    <label for="paginas">Páginas</label>
+                    <input type="number" id="paginas" name="paginas">
+                </div>
+                <div class="form-group">
+                    <label for="nota">Nota (0-10)</label>
+                    <input type="number" id="nota" name="nota" min="0" max="10" step="0.1">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="sinopse">Sinopse</label>
+                <textarea id="sinopse" name="sinopse" rows="5"></textarea>
+            </div>
+            
+            <div class="form-actions">
+                <button type="submit" class="btn-primary">Salvar</button>
+            </div>
+        </form>
+    </main>
+
+    <script type="module" src="../js/app.js"></script>
+</body>
+</html>
